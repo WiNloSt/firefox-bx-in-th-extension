@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Bx.in.th widget",
+  "version": "1.0",
+
+  "description": "Show Bx.in.th coin prices",
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["main.js"]
+    }
+  ],
+
+  "applications": {
+    "gecko": {
+      "id": "bx@widget.com"
+    }
+  }
+}
